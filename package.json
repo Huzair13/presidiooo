@@ -1,0 +1,22 @@
+{
+  "name": "movies_list_application_mongoDB_used",
+  "version": "1.0.0",
+  "description": "movies list app",
+  "main": "app.js",
+  "engines": {
+    "node": "18.x"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "mongodb": "^6.3.0"
+  },
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error : no test sepcified\"&& exit 1"
+  },
+  "keywords": [],
+  "author": ""
+}
