@@ -58,7 +58,7 @@ app.post('/addMovies', async (req, res) => {
     dbo.collection("MoviesData").insertOne(newMovie)
     .then(()=>{
         console.log("One Movie Inserted Successfully !!!!");
-        res.send("Insert Successfull :)")
+        res.send("Insert Successfull ")
     })
     .catch(()=>{
         console.log("Error at Insert !!!");
@@ -164,12 +164,12 @@ app.delete('/delete', (req, res) => {
     dbo.collection('MoviesData').deleteOne({movieName : movieName})
     .then(function(result){
         if(result.deletedCount ==1){
-            console.log("Movie Deleted Successfully :)");
-            res.send("Movie Deleted Successfully :)")
+            console.log("Movie Deleted Successfully");
+            res.send("Movie Deleted Successfully")
         }
         else{
-            console.log("Movie Data Not Found :(");
-            res.send("Movie Data Not Found :(");
+            console.log("Movie Data Not Found");
+            res.send("Movie Data Not Found");
         }
     })
     .catch(function(err){
@@ -190,7 +190,7 @@ app.post('/search', (req, res) => {
             res.send(result);
         }
         else{
-            res.send("Movie Not Found :(")
+            res.send("Movie Not Found")
         }
     })
     .catch(function(err){
